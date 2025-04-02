@@ -76,7 +76,7 @@
                                   <div class="_second_24psy_92">
                                       <h2 class="_formTitle_24psy_77">Download the eBook</h2>
                                       <div class="_container_11yks_11">
-                                          <form class="custom-form">
+                                          <form id="form" class="custom-form">
                                               <div class="form-group">
                                                   <input type="text" id="firstName" name="firstName" placeholder="First Name *" required>
                                               </div>
@@ -151,5 +151,16 @@
                     </div>
             </div>
         </div>
+        <script>
+          document.getElementById("form").addEventListener("submit", function (e) {
+              e.preventDefault();
+        
+              document.getElementById("form").innerHTML = '<img src="files/loading.gif" style="width:80px !important;" width="80">';
+        
+              setTimeout(() => {
+                  document.getElementById("form").innerHTML = '<p style="font-size: 14px; color:black; font-weight: 700;">Thank you for your interest, download link has been sent to your mail address!</p>';
+              }, 2000);
+          });
+        </script>
     </body>
 </html>

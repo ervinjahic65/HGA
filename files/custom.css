@@ -998,3 +998,9 @@ form .form-field:not(.error) ._6si_sff_filled {
 .form-group select option {
     font-size: 14px; /* Adjust this value to your desired smaller size */
 }
+
+@media only screen and (max-width: 767px) {
+  ._contentImage_x76hc_48 {
+    display: none;
+  }
+}
