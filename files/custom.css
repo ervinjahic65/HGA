@@ -894,3 +894,107 @@ form .form-field:not(.error) ._6si_sff_filled {
 .st0{fill:#00aeef}
 
 .st0{fill:#00aeef}
+
+/* files/custom.css */
+.custom-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.form-group select {
+    appearance: none; /* Remove default arrow */
+    background-image: url('data:image/svg+xml;utf8,<svg fill="currentColor" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+    background-size: 16px 16px;
+}
+
+.checkbox-group {
+    flex-direction: row;
+    align-items: center;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.submit-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+.privacy-policy-text {
+    font-size: 12px;
+    color: #777;
+    margin-top: 10px;
+}
+
+.privacy-policy-text a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.privacy-policy-text a:hover {
+    text-decoration: underline;
+}
+
+.form-group select {
+    /* Existing styles */
+    appearance: none;
+    background-color: white;
+    background-image: linear-gradient(45deg, transparent 50%, #007bff 50%),
+                      linear-gradient(135deg, #007bff 50%, transparent 50%);
+    background-position: calc(100% - 15px) 50%, calc(100% - 10px) 50%;
+    background-size: 5px 5px, 5px 5px;
+    background-repeat: no-repeat;
+    padding-right: 30px;
+
+    /* Ensure the select input has a consistent width */
+    width: 100%; /* Or a specific pixel value like 300px if needed */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Optional: Style the options if needed (though usually they inherit width) */
+.form-group select option {
+    width: 100%; /* Try this if options are not expanding */
+    box-sizing: border-box;
+}
+
+.form-group select option {
+    font-size: 14px; /* Adjust this value to your desired smaller size */
+}
