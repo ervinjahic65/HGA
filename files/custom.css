@@ -997,8 +997,20 @@ form .form-field:not(.error) ._6si_sff_filled {
     font-size: 14px; /* Adjust this value to your desired smaller size */
 }
 
+._homeLink_2ciez_31 img, ._logoLink_pwsat_51 img {
+  width: 220px;
+  height: auto;
+}
+
+._container_2ciez_11 {
+  height: 85px !important;
+}
+
 @media only screen and (max-width: 767px) {
   ._contentImage_x76hc_48 {
     display: none;
+  }
+  p.mobile-adv {
+    left: 80% !important;
   }
 }
